@@ -1,3 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper-img .wrp-img-patt {
+  width: 350px;
+  position: relative;
+}
+.wrapper-img .img-ptrn {
+  width: 300px;
+  object-fit: contain;
+}
+.wrapper-img .img-person {
+  width: 235px;
+  position: absolute;
+  top: 9.5%;
+  right: 24%;
+  border-radius: 10px;
+}
+.wrapper-img .slide {
+  position: absolute;
+  top: 87%;
+  right: 51%;
+}
 
 /*# sourceMappingURL=style.css.map */
