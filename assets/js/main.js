@@ -1,6 +1,7 @@
 const articles = document.querySelectorAll('article');
 
-const cambiaImagen = ()=>{
+const cambiaImagen = ()=>{    
+
     if (articles[0].classList.contains('no-visible')){
         setTimeout(() => {
            articles[0].classList.remove('no-visible');
@@ -16,13 +17,21 @@ const cambiaImagen = ()=>{
     }
 }
 
-const button_prev =document.querySelector('#prev');
+const button_prev1 =document.querySelector('#prev1');
 
-button_prev.addEventListener('click',cambiaImagen);
+button_prev1.addEventListener('click',cambiaImagen);
 
-const button_next =document.querySelector('#next');
+const button_next1 =document.querySelector('#next1');
 
-button_next.addEventListener('click',cambiaImagen);
+button_next1.addEventListener('click',cambiaImagen);
+
+const button_prev2 =document.querySelector('#prev2');
+
+button_prev2.addEventListener('click',cambiaImagen);
+
+const button_next2 =document.querySelector('#next2');
+
+button_next2.addEventListener('click',cambiaImagen);
     
 
 

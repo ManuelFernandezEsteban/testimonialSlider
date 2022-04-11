@@ -20,15 +20,43 @@ article {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 20px;
   width: 375px;
   align-self: center;
+}
+@media (min-width: 768px) {
+  article {
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 50px;
+    padding-left: 75px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  article {
+    padding-left: 50px;
+    padding-right: 200px;
+    padding: 100px;
+  }
 }
 
 .wrapper-img {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .wrapper-img {
+    align-self: center;
+    width: 50%;
+    margin-left: -50px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper-img {
+    margin-left: -150px;
+  }
 }
 .wrapper-img .wrp-img-patt {
   width: 350px;
@@ -37,10 +65,20 @@ article {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .wrapper-img .wrp-img-patt {
+    width: 100%;
+  }
+}
 .wrapper-img .img-ptrn {
   width: 330px;
   object-fit: contain;
   align-self: center;
+}
+@media (min-width: 768px) {
+  .wrapper-img .img-ptrn {
+    width: 100%;
+  }
 }
 .wrapper-img .img-person {
   width: 260px;
@@ -49,6 +87,13 @@ article {
   right: 14%;
   border-radius: 10px;
   box-shadow: 0px 0px 50px -20px;
+}
+@media (min-width: 768px) {
+  .wrapper-img .img-person {
+    width: 78%;
+    top: 9.5%;
+    right: 11%;
+  }
 }
 .wrapper-img .slide {
   position: absolute;
@@ -62,6 +107,12 @@ article {
   border-radius: 30px;
   box-shadow: 0px 0px 80px 10px;
 }
+@media (min-width: 768px) {
+  .wrapper-img .slide {
+    top: 88%;
+    right: 65%;
+  }
+}
 .wrapper-img button {
   border: 0;
   background-color: transparent;
@@ -72,8 +123,16 @@ article {
 }
 
 .wrapper-description {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .wrapper-description {
+    align-self: center;
+    width: 50%;
+  }
 }
 .wrapper-description p {
   text-align: center;
@@ -82,17 +141,41 @@ article {
   color: #202046;
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  .wrapper-description p {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper-description p {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+}
 .wrapper-description img {
   position: absolute;
   right: 43%;
   top: -2%;
   width: 60px;
 }
+@media (min-width: 768px) {
+  .wrapper-description img {
+    top: 1%;
+    right: 69%;
+  }
+}
 .wrapper-description .wrapper-person {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .wrapper-description .wrapper-person {
+    flex-direction: row;
+    align-self: flex-start;
+  }
 }
 .wrapper-description .wrapper-person .name {
   text-align: center;
