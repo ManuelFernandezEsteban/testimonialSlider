@@ -3,7 +3,8 @@
 $dark-blue: hsl(240, 38%, 20%)
 $grayish-blue: hsl(240, 18%, 77%)
 
-$font-size: 32px
+$font-size: 1.225rem
+$font-family: 'Inter'
 
 *
     box-sizing: border-box
@@ -22,28 +23,84 @@ main
 article
     display: flex
     flex-direction: column
-    justify-content: center
+    height: 100vh
+    justify-content: flex-start
+    padding: 20px
+    width: 375px
+    align-self: center
 
 
 .wrapper-img
     display: flex
     flex-direction: column
-    justify-content: center
+   
     
     .wrp-img-patt
         width: 350px
         position: relative
+        align-self: center
+        display: flex
+        flex-direction: column
     .img-ptrn
-        width: 300px
+        width: 330px
         object-fit: contain  
-        
+        align-self: center
     .img-person
-        width: 235px        
+        width: 260px        
         position: absolute
         top: 9.5%
-        right: 24%
+        right: 14%
         border-radius: 10px
+        box-shadow: 0px 0px 50px -20px
     .slide
         position: absolute
         top: 87%
-        right: 51%
+        right: 43%
+        background-color: white
+        width: 70px
+        height: 40px
+        display: flex
+        justify-content: space-around
+        border-radius: 30px
+        box-shadow: 0px 0px 80px 10px
+    button
+        border: 0
+        background-color: transparent
+        cursor: pointer
+        .icon
+            width: 10px
+
+.wrapper-description
+    position: relative
+    margin-top: 50px
+    p
+        text-align: center
+        font-family: $font-family
+        font-size: $font-size
+        color: $dark-blue
+        font-weight: 300
+    img
+        position: absolute
+        right: 43%
+        top: -2%
+        width: 60px
+    .wrapper-person
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .name
+            text-align: center
+            font-family: $font-family
+            font-size: 1rem
+            color: $dark-blue
+            font-weight: 700
+        .empleo
+            text-align: center
+            font-family: $font-family
+            font-size: 1rem
+            color: $grayish-blue
+            font-weight: 300
+
+.no-visible
+    display: none

@@ -19,33 +19,98 @@ main {
 article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 375px;
+  align-self: center;
 }
 
 .wrapper-img {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .wrapper-img .wrp-img-patt {
   width: 350px;
   position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 .wrapper-img .img-ptrn {
-  width: 300px;
+  width: 330px;
   object-fit: contain;
+  align-self: center;
 }
 .wrapper-img .img-person {
-  width: 235px;
+  width: 260px;
   position: absolute;
   top: 9.5%;
-  right: 24%;
+  right: 14%;
   border-radius: 10px;
+  box-shadow: 0px 0px 50px -20px;
 }
 .wrapper-img .slide {
   position: absolute;
   top: 87%;
-  right: 51%;
+  right: 43%;
+  background-color: white;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: 0px 0px 80px 10px;
+}
+.wrapper-img button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.wrapper-img button .icon {
+  width: 10px;
+}
+
+.wrapper-description {
+  position: relative;
+  margin-top: 50px;
+}
+.wrapper-description p {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.225rem;
+  color: #202046;
+  font-weight: 300;
+}
+.wrapper-description img {
+  position: absolute;
+  right: 43%;
+  top: -2%;
+  width: 60px;
+}
+.wrapper-description .wrapper-person {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper-description .wrapper-person .name {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #202046;
+  font-weight: 700;
+}
+.wrapper-description .wrapper-person .empleo {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #babacf;
+  font-weight: 300;
+}
+
+.no-visible {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
