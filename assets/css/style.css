@@ -196,4 +196,11 @@ article {
   display: none;
 }
 
+.curve {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */
